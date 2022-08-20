@@ -10,7 +10,7 @@ const Doctors = () => {
       .then((data) => setDoctors(data));
   }, []);
   return (
-    <div>
+    <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-3">
       {doctors.map((doctor) => (
         <Banner doctor={doctor}></Banner>
       ))}
